@@ -5,6 +5,8 @@ public class AdvancedCalculator {
 
     // Calculates the power of a number
     public double power(double base, int exponent) {
+
+        if(base == 0 && exponent < 0 ) throw new ArithmeticException("Cannot calculate power of 0 with a negative exponent");
         if (exponent < 0) {
             return 1 / Math.pow(base, -exponent);
         }
