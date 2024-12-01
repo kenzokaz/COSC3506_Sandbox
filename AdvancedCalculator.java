@@ -6,6 +6,7 @@ public class AdvancedCalculator {
     // Calculates the power of a number
     public double power(double base, int exponent) {
 
+        // throwed the ArthmeticException
         if(base == 0 && exponent < 0 ) throw new ArithmeticException("Cannot calculate power of 0 with a negative exponent");
         if (exponent < 0) {
             return 1 / Math.pow(base, -exponent);
@@ -35,10 +36,13 @@ public class AdvancedCalculator {
     }
 
     // Calculates factorial of a number
+    // change the datatype to long
     public long factorial(int number) {
         if (number < 0) {
             throw new IllegalArgumentException("Factorial is undefined for negative numbers");
         }
+
+        // change the data type to long
         long result = 1;
         for (int i = 1; i <= number; i++) {
             result *= i;

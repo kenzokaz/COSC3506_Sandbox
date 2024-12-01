@@ -33,7 +33,7 @@ class AdvancedCalculatorTest {
     void powerPositiveZeroNegative() {
         //Tests if it either 0 or -1
         assertThrows(ArithmeticException.class, () -> {
-`            calculator.power(0, -1);
+            calculator.power(0, -1);
         }, "Power of 0 with negative exponent should throw ArithmeticException");
     }
 
