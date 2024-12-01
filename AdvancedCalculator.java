@@ -1,5 +1,8 @@
 public class AdvancedCalculator {
 
+
+
+
     // Calculates the power of a number
     public double power(double base, int exponent) {
         if (exponent < 0) {
