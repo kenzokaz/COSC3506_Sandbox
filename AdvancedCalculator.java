@@ -35,11 +35,11 @@ public class AdvancedCalculator {
     }
 
     // Calculates factorial of a number
-    public int factorial(int number) {
+    public long factorial(int number) {
         if (number < 0) {
             throw new IllegalArgumentException("Factorial is undefined for negative numbers");
         }
-        int result = 1;
+        long result = 1;
         for (int i = 1; i <= number; i++) {
             result *= i;
         }
